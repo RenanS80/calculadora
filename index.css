@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 20px;
+	
+}
+
+body{
+	min-height: 100vh;
+	background-color: #091921;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 40px;
+}
+
+h1{
+	font-family: 'Open Sans';
+}
+
+.calculadora{
+	position: relative;
+	display: grid;
+
+}
+
+.calculadora .valor{
+	grid-column: span 4;
+	height: 100px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 10px;
+}
+
+.calculadora span{
+	display: grid;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	background: #0c2835;
+	place-items: center;
+	border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.calculadora span:active{
+	background: #f4ff3b;
+	color: #111;
+}
+
+.resetar{		/* Botão C */
+	display: grid;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	background: #b73e47;
+	place-items: center;
+	border: 1px solid rgba(0, 0, 0, .1);
+	cursor: default;
+	grid-column: span 2;
+	width: 120px;
+}
+
+.calculadora span.soma{
+	grid-row: span 2;
+	height: 120px;
+}
+
+.calculadora span.igual{
+	background: #03b1ff;
+	cursor: pointer;
+}

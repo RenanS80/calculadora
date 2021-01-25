@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Calculadora</title>
+		
+		<!-- Para colocar imagem na aba -->
+		<link rel="icon" href="icon.png">
+
+        <link rel="stylesheet" href="index.css">       
+
+    </head>
+
+	<body style="background-color: #091921">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<h1 align="center" style="font-size: 23px;">Calculadora virtual</h1>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+
+			<br><br>
+
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<form class="calculadora" name="calc">
+						<input type="text" name="txt" class="valor" readonly="" style="font-size: 24px; width: 240px;">
+						<input class="num resetar" type="reset" onclick="document.calc.txt.value +=''" value="C">
+						<span class="num" onclick="document.calc.txt.value +='/'">/</span>
+						<span class="num" onclick="document.calc.txt.value +='*'">*</span>
+						<span class="num" onclick="document.calc.txt.value +='7'">7</span>
+						<span class="num" onclick="document.calc.txt.value +='8'">8</span>
+						<span class="num" onclick="document.calc.txt.value +='9'">9</span>
+						<span class="num" onclick="document.calc.txt.value +='-'">-</span>
+						<span class="num" onclick="document.calc.txt.value +='4'">4</span>
+						<span class="num" onclick="document.calc.txt.value +='5'">5</span>
+						<span class="num" onclick="document.calc.txt.value +='6'">6</span>
+						<span class="num soma" onclick="document.calc.txt.value +='+'">+</span>
+						<span class="num" onclick="document.calc.txt.value +='3'">3</span>
+						<span class="num" onclick="document.calc.txt.value +='2'">2</span>
+						<span class="num" onclick="document.calc.txt.value +='1'">1</span>
+						<span class="num" onclick="document.calc.txt.value +='0'">0</span>
+						<span class="num" onclick="document.calc.txt.value +='00'">00</span>
+						<span class="num" onclick="document.calc.txt.value +='.'">.</span>
+						<span class="num igual" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+					</form>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+
+		</div>
+    </body>
+</html>
